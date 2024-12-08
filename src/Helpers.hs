@@ -3,6 +3,7 @@ module Helpers
   , space
   , newline
   , safeTail
+  , safeHead
   ) where
 
 import Control.Monad ((<=<))
@@ -40,3 +41,8 @@ safeTail :: [a] -> [a]
 safeTail = \case
   [] -> []
   (_ : xs) -> xs
+
+safeHead :: [a] -> Maybe a
+safeHead = \case
+  [] -> Nothing
+  (x : _) -> Just x

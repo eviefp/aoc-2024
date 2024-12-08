@@ -59,10 +59,12 @@ library
 
     -- Modules exported by the library.
     exposed-modules:  Aoc
+                    , Evie.Grid
                     , Helpers
                     , Day.Day1
                     , Day.Day2
                     , Day.Day3
+                    , Day.Day4
 
     default-extensions:
       BangPatterns
